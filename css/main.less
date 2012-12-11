@@ -1,0 +1,40 @@
+/**
+ * Source file
+ */
+
+/* Variables */
+@bodybg : "grey"; /*noisy, subtle_carbon*/
+@footerHeight : 60px;
+
+
+
+/* Styles */
+body{
+    background-image: url("../img/@{bodybg}_@2X.png");
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+}
+
+
+/* Sticky footer */
+html,body{
+    height: 100%;
+}
+
+
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -@footerHeight;
+}
+
+
+#footer {
+    height: @footerHeight;
+}
