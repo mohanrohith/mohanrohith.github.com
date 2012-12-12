@@ -1,5 +1,18 @@
 body{background-image:url("../img/grey_@2X.png");font-family:'Open Sans',sans-serif;padding:0;}
 h1,h2,h3,h4,h5,h6{font-weight:700;}
+h1{font-size:32px;}
+h2{font-size:26px;}
+h3{font-size:20px;}
+h1,h2,h3{line-height:36px;}
 html,body{height:100%;}
 #wrap{min-height:100%;height:auto !important;height:100%;margin:0 auto -60px;}
 #footer{height:60px;}
+.main{padding-bottom:60px;}
+.hero-unit{margin-top:50px;background:url(../img/noisy_grid_@2X.png);}.hero-unit h1{font-size:42px;}
+.hero-unit p{margin:0;}
+.hero-unit i{vertical-align:middle;margin:0;}
+.row h2{cursor:pointer;}.row h2 i{margin-left:0.5em;}
+.row i{vertical-align:middle;}
+.row .well{min-height:auto;}
+.row .closed{border:0;padding:0;}
+.row hr{margin:5px 0;border-top:1px solid #ddd;}

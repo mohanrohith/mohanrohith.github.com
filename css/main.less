@@ -7,6 +7,17 @@
 @footerHeight : 60px;
 
 
+/* mixins */
+.transition ( @property: all, @time: 300ms, @function: ease-in-out){
+    -webkit-transition: @property @time @function;
+       -moz-transition: @property @time @function;
+        -ms-transition: @property @time @function;
+            transition: @property @time @function;
+}
+
+.box-shadow (@color: #000, @xoffset: 0, @yoffset: 0){
+}
+
 
 /* Styles */
 body{
@@ -20,6 +31,21 @@ h1, h2, h3, h4, h5, h6{
     font-weight: 700;
 }
 
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1,h2,h3{
+    line-height: 36px;
+}
 
 /* Sticky footer */
 html,body{
@@ -37,4 +63,65 @@ html,body{
 
 #footer {
     height: @footerHeight;
+}
+
+.main{
+    padding-bottom: @footerHeight;
+}
+
+
+/* Hero Unit */
+.hero-unit{
+    margin-top: 50px;
+    background: url(../img/noisy_grid_@2X.png);
+
+
+    h1{
+        font-size: 42px;
+    }
+
+    p{
+        margin: 0;
+    }
+
+    i{
+        vertical-align: middle;
+        margin: 0;
+    }
+}
+
+
+/* sections */
+.row{
+
+    h2{
+        cursor: pointer;
+
+        i{
+            margin-left: 0.5em;
+        }
+
+    }
+    i{
+        vertical-align: middle;
+
+    }
+
+    .block{
+
+    }
+
+    .well{
+        min-height: auto;
+    }
+
+    .closed{
+        border: 0;
+        padding: 0;
+    }
+
+    hr{
+        margin: 5px 0;
+        border-top: 1px solid #ddd;
+    }
 }
